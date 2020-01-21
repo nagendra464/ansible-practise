@@ -1,0 +1,2 @@
+export EC2_INI_PATH=/home/docker/ansible-practise/ec2.ini
+export ANSIBLE_HOSTS=/home/docker/ansible-practise/ec2.py
