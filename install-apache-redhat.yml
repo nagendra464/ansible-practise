@@ -12,3 +12,8 @@
     service:
       name: httpd
       state: started
+
+  - name: To copy index file to apache server
+    template:
+      src: index.j2
+      dest: /var/www/html/    
