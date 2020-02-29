@@ -16,7 +16,7 @@
   - name: To copy index file to apache server
     template:
       src: index.j2
-      dest: /var/www/html/
+      dest: /var/www/html/index
     notify: restart
     
     
