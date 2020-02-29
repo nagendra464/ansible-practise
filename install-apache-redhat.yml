@@ -6,4 +6,4 @@
   - name: install webservers
     yum:
       name: httpd
-      state: present
+      state: started
