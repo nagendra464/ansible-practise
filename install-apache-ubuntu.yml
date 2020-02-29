@@ -3,7 +3,10 @@
   hosts: webservers
   become: yes
   tasks:
-
+  - name: updating the repos
+    apt:
+      name: "*"
+      state: latest
   - name: install apache
     apt:
       name: apache2
