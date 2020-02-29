@@ -1,0 +1,9 @@
+---
+- name: install httpd on redhat server
+  hosts: webservers
+  become: yes
+  tasks:
+  - name: install webservers
+    yum:
+      name: httpd
+      state: present
