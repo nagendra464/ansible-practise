@@ -3,4 +3,11 @@
   group:
     name: tomcat
     state: present
-  
+
+- name: Add the user 'tomcat' 
+  user:
+    name: tomcat
+    shell: /bin/false
+    group: tomcat
+    home: /opt/tomcat
+     
