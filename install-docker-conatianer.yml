@@ -3,6 +3,11 @@
   hosts: webservers
   become: yes
   tasks:
+  - name: Move the war file to node side
+    copy: 
+      src: naglogin-1.0.war
+      dest: /root
+
   - name: Build docker image
     copy:
       src: Dockerfile
