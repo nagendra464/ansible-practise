@@ -7,12 +7,12 @@
     ec2:
      key_name: ohio
      instance_type: t2.micro
-     image: ami-0d03add87774b12c5
+     image: ami-0e2005b9ade448037
      region: us-east-2
      wait: yes
      group: launch-wizard-21
      instance_tags:
         Name: dynamic-servers
-     count: 1
+     count: 2
      vpc_subnet_id: subnet-566eef1a
      assign_public_ip: yes
