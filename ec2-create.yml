@@ -10,9 +10,9 @@
      image: ami-0e2005b9ade448037
      region: us-east-2
      wait: yes
-     group: launch-wizard-21
+     group: security-default
      instance_tags:
         Name: dynamic-servers
      count: 2
-     vpc_subnet_id: subnet-566eef1a
+     vpc_subnet_id: subnet-24b43d68
      assign_public_ip: yes
