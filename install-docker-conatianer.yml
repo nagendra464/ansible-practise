@@ -15,8 +15,8 @@
 
 
   - name: Build Docker image from Dockerfile
-      docker_image:
-        name: web
-        path: /root
-        state: buildle
+    docker_image:
+      name: web
+      path: /root
+      state: buildle
     
