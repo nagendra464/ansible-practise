@@ -12,3 +12,11 @@
     copy:
       src: Dockerfile
       dest: /root
+
+
+  - name: Build Docker image from Dockerfile
+      docker_image:
+        name: web
+        path: /root
+        state: buildle
+    
