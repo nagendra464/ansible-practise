@@ -12,3 +12,10 @@
     state: directory
     recurse: yes
     mode: g+r,g+x   
+
+- name: tomcat user the owner of the webapps, work, temp, and logs
+  file:
+    path: /opt/tomcat
+    state: directory
+    recurse: yes
+    owner: tomcat  
