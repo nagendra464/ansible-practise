@@ -5,7 +5,7 @@
   tasks:
   - name: launch instance
     ec2:
-     key_name: ohio
+     key_name: pratice
      instance_type: t2.micro
      image: ami-0e2005b9ade448037
      region: us-east-2
