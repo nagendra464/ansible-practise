@@ -1,0 +1,9 @@
+---
+- name: Build docker image from Dockerfile
+  hosts: webservers
+  become: yes
+  tasks:
+  - name: Build docker image
+    copy:
+      src: Dockerfile
+      dest: /root
