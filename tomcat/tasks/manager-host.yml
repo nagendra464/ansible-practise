@@ -2,7 +2,7 @@
 - name: copy the context.xml to manager
   template:
    src: context.xml.j2
-   dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+   dest: /opt/tomcat/apache-tomcat-8.5.47/webapps/manager/META-INF/context.xml
   notify: restart tomcat 
 
 
@@ -10,5 +10,5 @@
 - name: copy the context.xml to host manager
   template:
    src: context.xml.j2
-   dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+   dest: /opt/tomcat/apache-tomcat-8.5.47/webapps/host-manager/META-INF/context.xml
   notify: restart tomcat  
