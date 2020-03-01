@@ -38,7 +38,7 @@
     docker_image:
       name: web
       repository: nagendra464/web
-      tag: 1
+      tag: latest
       push: yes   
 
   - name: Create Container
