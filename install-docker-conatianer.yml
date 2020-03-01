@@ -25,5 +25,7 @@
     docker_container:
       image: web:latest
       path: /root
+      volumes:
+      - /data
       state: running    
     
