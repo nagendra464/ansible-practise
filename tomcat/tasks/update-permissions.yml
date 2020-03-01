@@ -9,6 +9,6 @@
 - name: tomcat group read access to the conf directory
   file:
     path: /opt/tomcat/conf
-    state: touch
+    state: directory
     recurse: yes
     mode: g+r,g+x   
