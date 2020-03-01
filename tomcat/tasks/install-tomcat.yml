@@ -4,3 +4,16 @@
     url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat-8.5.47.tar.gz
     dest: /home/nag/apache-tomcat-8.5.47.tar.gz
     force_basic_auth: yes
+
+
+- name: create the directory
+  file:
+   path: /opt/tomcat
+   state: directory
+
+
+- name: extract the tar file
+  unarchive:
+    src: /home/nag/apache-tomcat-8.5.47.tar.gz
+    dest: /opt/tomcat
+    remote_src: yes       
