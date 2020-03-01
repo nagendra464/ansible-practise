@@ -1,0 +1,14 @@
+---
+- name: update the permissions
+  file:
+    path: /opt/tomcat
+    state: directory
+    recurse: yes
+    group: tomcat
+
+- name: tomcat group read access to the conf directory
+  file:
+    path: /opt/tomcat/conf
+    state: touch
+    recurse: yes
+    mode: g+r,g+x   
