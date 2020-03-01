@@ -1,0 +1,8 @@
+---
+- name: Create Container
+  docker_container:
+    name: tomcat
+    image: web:latest
+    ports:
+      - 8090:8080
+    privileged: true 

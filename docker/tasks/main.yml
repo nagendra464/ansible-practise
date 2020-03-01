@@ -1,2 +1,8 @@
 ---
 # tasks file for docker
+- include_tasks: copy-war.yml
+- include_tasks: copy-dockerfile.yml
+- include_tasks: build-image.yml
+- include_tasks: docker-login.yml
+- include_tasks: image-push.yml
+- include_tasks: container-create.yml

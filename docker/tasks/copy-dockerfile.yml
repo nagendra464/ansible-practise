@@ -1,0 +1,5 @@
+---
+- name: Build docker image
+  copy:
+    src: Dockerfile
+    dest: /root

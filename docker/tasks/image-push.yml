@@ -1,0 +1,7 @@
+---
+- name: Tag and push to docker hub
+  docker_image:
+    name: web
+    repository: nagendra464/web
+    tag: latest
+    push: yes
