@@ -30,8 +30,16 @@
 
   - name: Log into DockerHub
     docker_login:
-     username: nagendra464
-     password: loveudarling    
+      username: nagendra464
+      password: loveudarling    
+
+
+  - name: Tag and push to docker hub
+    docker_image:
+      name: web
+      repository: nagendra464/web
+      tag: 1
+      push: yes   
 
   - name: Create Container
     docker_container:
