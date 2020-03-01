@@ -1,0 +1,6 @@
+---
+- name: create the container and push the image into docker hub
+  hosts: webservers
+  become: yes
+  roles:
+  - {role: docker}
