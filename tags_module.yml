@@ -7,19 +7,17 @@
     apt:
      name: tree
      state: present
-    tags:
-    - 1
+    tags: 1st
 
   - name: install wget
     apt:
      name: wget
      state: present
-    tags:
-    - 2
+    tags: 2nd
+    
   - name: install git
     apt:
      name: git
      state: present
-    tags:
-    - 3       
+    tags: 3rd       
     
