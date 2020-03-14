@@ -1,0 +1,25 @@
+---
+- name: using tags
+  hosts: ubuntu
+  become: yes
+  tasks:
+  - name: install tree
+    apt:
+     name: tree
+     state: present
+    tags:
+    - 1
+
+  - name: install wget
+    apt:
+     name: wget
+     state: present
+    tags:
+    - 2
+  - name: install git
+    apt:
+     name: git
+     state: present
+    tags:
+    - 3       
+    
