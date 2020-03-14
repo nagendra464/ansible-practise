@@ -5,7 +5,7 @@
   - name: update the packages
     apt:
      name: "*"
-     state: update
+     state: latest
 
   - name: install java on ubuntu
     apt:
