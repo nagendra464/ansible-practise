@@ -1,1 +1,2 @@
-java_ubuntu: openjdk-7-jdk
+# ubuntu node
+java_ubuntu: openjdk-8-jdk
