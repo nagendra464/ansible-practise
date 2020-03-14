@@ -1,0 +1,23 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - name: update the packages
+    apt:
+     name: "*"
+     state: update
+
+  - name: install java on ubuntu
+    apt:
+     name: "{{java_ubuntu}}"
+     state: present
+
+    when: ansible_os_family == "Debian"
+
+
+  - name: install java on redhat
+    yum:
+     name: "{{java_redhat}}" 
+     state: present
+
+    when: ansible_os_family =="RedHat"
