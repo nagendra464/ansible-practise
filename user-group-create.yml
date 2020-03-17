@@ -1,0 +1,79 @@
+---
+- name: user and group creation
+  hosts: localhost
+  become: yes
+  tasks:
+
+  - name: create dev group
+    group:
+     name: dev
+     state: present
+
+  - name: create prod group 
+    group:
+     name: prod
+     state: present
+
+  - name: create the user and add to dev group
+    user:
+     name: dileep
+     password: 1234
+     comment: orange
+     uid: 1040
+     groups: dev  
+
+  - name: create the user and add to dev group
+    user:
+     name: jana
+     password: 1234
+     comment: apple
+     uid: 1041
+     groups: dev 
+
+  - name: create the user and add to dev group
+    user:
+     name: nagendra
+     password: 1234
+     comment: goa
+     uid: 1042
+     groups: dev      
+
+
+  - name: create the user and add to prod group
+    user:
+     name: amruth
+     password: 1234
+     comment: pineapple
+     uid: 1043
+     groups: prod     
+
+
+  - name: create the user and add to prod group
+    user:
+     name: krishna
+     password: 1234
+     comment: pineapple
+     uid: 1045
+     groups: prod    
+
+  - name: create the user and add to prod group
+    user:
+     name: hari
+     password: 1234
+     comment: pineapple
+     uid: 1046
+     groups: prod     
+
+
+  - name: remove the amruth
+    user:
+     name: amruth
+     state: absent
+     remove: yes  
+
+
+  - name: remove the hari
+    user:
+     name: hari
+     state: absent
+     remove: yes                    
