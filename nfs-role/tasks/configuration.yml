@@ -1,5 +1,7 @@
-- name: Template a file to /etc/files.conf
+---
+- name: NFS configuration file to set up the sharing of these resources.
   template:
-    src: /exports.j2
+    src: exports.j2
     dest: /etc/exports
+  notify: restart nfs  
     
