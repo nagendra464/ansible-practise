@@ -1,2 +1,9 @@
 ---
 # tasks file for nfs-role
+- include_tasks: nfs-client.yml
+- include_tasks: nfs-server.yml
+- include_tasks: file-create.yml
+- include_tasks: confiuguration.yml
+- include_tasks: service.yml
+- include_tasks: mountpoint.yml
+- include_tasks: fstab.yml

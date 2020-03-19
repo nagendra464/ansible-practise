@@ -1,0 +1,5 @@
+- name: Template a file to /etc/files.conf
+  template:
+    src: /templates/exports.j2
+    dest: /etc/exports
+    

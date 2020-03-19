@@ -1,0 +1,10 @@
+---
+- name: update fstab and mount nfs share
+  mount:
+    name: "{{nfs_mountpoint}}"
+    src: "{{nfsserver}}:/{{nfsexport}}"
+    fstype: nfs
+    opts: defaults,rw,bg
+    dumo: 0
+    passno: 2
+    state: mounted

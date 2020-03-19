@@ -1,0 +1,6 @@
+- name: Create mountpoint for nfs
+  file:
+    path: "{{nfs_mountpoint}}"
+    state: directory 
+    mode: '0755'
+    owner: root
