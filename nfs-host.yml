@@ -1,0 +1,6 @@
+---
+- name: install nfs on host
+  hosts: host
+  become: yes
+  roles:
+  - {role: nfs-client}
