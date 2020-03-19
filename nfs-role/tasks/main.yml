@@ -3,7 +3,7 @@
 # - include_tasks: nfs-client.yml
 - include_tasks: nfs-host.yml
 - include_tasks: file-create.yml
-- include_tasks: confiuguration.yml
+- include_tasks: configuration.yml
 - include_tasks: service.yml
 # - include_tasks: mountpoint.yml
 # - include_tasks: fstab.yml
