@@ -1,0 +1,21 @@
+pipeline {
+    agent any 
+    environment{
+      TAG = "${BUILD_ID}"
+    }
+   
+    stages{
+        stage('Clone repository'){
+            steps {
+        git 'https://github.com/nagendra464/project.git'
+ 
+            }
+    }   
+
+        stage('Maven Goals'){
+            steps {
+        sh label: '', script: 'mvn clean install package'
+  
+            }
+    }
+}
