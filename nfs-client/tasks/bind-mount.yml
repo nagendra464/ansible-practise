@@ -1,0 +1,8 @@
+---
+- name: Mount the directories
+  mount:
+    path: 172.31.39.209:/home
+    src: /nfs/home
+    opts: bind
+    fstype: none
+    state: mounted
