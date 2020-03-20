@@ -3,12 +3,12 @@
   hosts: local
   become: yes
   vars:
-    host: "3.18.102.54:8080"
-    token: "1153554321d29c021e79200b931a71272e"
-    user: "project"
-    password: "project"
+    host: 3.18.102.54:8080
+    token: 1153554321d29c021e79200b931a71272e
+    user: project
+    password: project
   tasks:
-  - name: jenkins
+  - name: build the job
     uri:
       url: http://{{ host }}/job/{{ job }}/build?token={{ token }}
       method: POST
