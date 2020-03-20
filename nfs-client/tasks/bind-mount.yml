@@ -2,7 +2,7 @@
 - name: Mount the directories
   mount:
     path: /nfs/home
-    src: 172.31.39.209:/home/nfs/home
+    src: 172.31.39.209:/home
     opts: bind
     fstype: none
     state: mounted
