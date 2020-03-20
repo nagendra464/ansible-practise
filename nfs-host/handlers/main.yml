@@ -1,6 +1,2 @@
 ---
 # handlers file for nfs-role
-- name: restart nfs
-  service:
-   name: nfs-kernel-server
-   state: restarted

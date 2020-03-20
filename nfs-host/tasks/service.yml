@@ -3,4 +3,4 @@
   service:
    name: nfs-kernel-server
    state: restarted
-   enabled: yes
+   
