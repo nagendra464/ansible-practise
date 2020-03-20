@@ -3,5 +3,5 @@
   ufw:
     state: enabled
     policy: allow
-    to_ip: 172.31.32.61
+    to_ip: 172.31.32.142
     
