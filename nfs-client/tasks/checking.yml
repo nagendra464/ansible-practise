@@ -11,6 +11,6 @@
 - name: First, write a test file to the /var/nfs/general share.
   file:
     path: /nfs/home/home.test
-    owner: nobody
-    group: nogroup
+    owner: root
+    group: root
     state: touch   
