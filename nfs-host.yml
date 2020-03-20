@@ -4,4 +4,4 @@
   become: yes
   roles:
   - {role: nfs-host}
-  - {role: nfs-clien}
+  - {role: nfs-client}
