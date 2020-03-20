@@ -3,17 +3,16 @@
   hosts: local
   become: yes
   vars:
-    host: 3.18.102.54:8080
-    job: ansible-job
-    token: 1153554321d29c021e79200b931a71272e
-    user: project
-    password: project
+    host: "3.18.102.54:8080"
+    token: "1153554321d29c021e79200b931a71272e"
+    user: "project"
+    password: "project"
   tasks:
   - name: jenkins
     uri:
       url: http://{{ host }}/job/{{ job }}/build?token={{ token }}
+      method: POST
       user: "{{ user }}"
       password: "{{ password }}"
-      method: POST
       force_basic_auth: yes
       status_code: 201
