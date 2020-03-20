@@ -1,6 +1,7 @@
 ---
 # tasks file for nfs-client
 - include_tasks: nfs-client.yml
+- include_tasks: ufw.yml
 - include_tasks: mount.yml
 # - include_tasks: bind-mount.yml
 - include_tasks: fstab.yml

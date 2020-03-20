@@ -1,0 +1,5 @@
+---
+- name: enable the ufw
+  ufw:
+    state: enabled
+    policy: allow
