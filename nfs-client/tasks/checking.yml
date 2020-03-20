@@ -5,6 +5,7 @@
     owner: nobody
     group: nogroup
     state: touch
+    mode: '0644'
 
 
 
@@ -13,4 +14,5 @@
     path: /nfs/home/home.test
     owner: root
     group: root
-    state: touch   
+    state: touch 
+    mode: '0644'  
