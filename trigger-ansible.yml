@@ -1,0 +1,19 @@
+---
+- name: build job through ansible
+  hosts: local
+  become: yes
+  vars:
+    jenkins.host: 3.18.102.54:8080
+    jenkins.job: ansible-job
+    jenkins.token: 1153554321d29c021e79200b931a71272e
+    jenkins.user: project
+    jenkins.password: project
+  tasks:
+  - name: jenkins
+    uri:
+      url: http://{{ jenkins.host }}/job/{{ jenkins.job }}/build?token={{ jenkins.token }}
+      user: "{{ jenkins.user }}"
+      password: "{{ jenkins.password }}"
+      method: GET
+      force_basic_auth: yes
+      status_code: 201

@@ -9,3 +9,6 @@
 
 [redhat]
 172.31.32.239
+
+[local]
+localhost
