@@ -1,7 +1,9 @@
 ---
-- name: install nfs on host
-  hosts: host,client
-  become: yes
+- name: Install common utils from role1
+  hosts: host  
   roles:
-  - {role: nfs-host}
-  - {role: nfs-client}
+  - nfs-host
+- name: some other common tasks
+  hosts: client  
+  roles:
+  - nfs-client
