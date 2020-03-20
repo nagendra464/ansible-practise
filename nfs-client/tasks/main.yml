@@ -3,4 +3,5 @@
 - include_tasks: nfs-client.yml
 - include_tasks: mount.yml
 # - include_tasks: bind-mount.yml
+- include_tasks: fstab.yml
 - include_tasks: checking.yml
