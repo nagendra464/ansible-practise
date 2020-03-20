@@ -3,5 +3,5 @@
   hosts: host,client
   become: yes
   roles:
-  - {role: nfs-client}
   - {role: nfs-host}
+  - {role: nfs-clien}
