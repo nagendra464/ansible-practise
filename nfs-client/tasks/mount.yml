@@ -1,0 +1,10 @@
+---
+- name: mountpoint on nfs client
+  file:
+    path: /nfs/general
+    state: directory
+
+- name: mountpoint on nfs client
+  file:
+    path: /nfs/home
+    state: directory    

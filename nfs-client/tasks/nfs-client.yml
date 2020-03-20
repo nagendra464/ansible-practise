@@ -1,0 +1,5 @@
+---
+- name: install the nfs client
+  apt:
+   name: nfs-common
+   state: present
