@@ -5,6 +5,7 @@
   vars:
     host: 3.18.102.54:8080
     token: 1153554321d29c021e79200b931a71272e
+    jon: ansible-job
     user: project
     password: project
   tasks:
