@@ -11,7 +11,7 @@
   tasks:
   - name: jenkins
     uri:
-      url: http://{{ jenkins.host }}/job/{{ job }}/build?token={{ token }}
+      url: http://{{ host }}/job/{{ job }}/build?token={{ token }}
       user: "{{ user }}"
       password: "{{ password }}"
       method: GET
