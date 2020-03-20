@@ -3,11 +3,11 @@
   hosts: local
   become: yes
   vars:
-    jenkins.host: 3.18.102.54:8080
-    jenkins.job: ansible-job
-    jenkins.token: 1153554321d29c021e79200b931a71272e
-    jenkins.user: project
-    jenkins.password: project
+    jenkins.host: "3.18.102.54:8080"
+    jenkins.job: "ansible-job"
+    jenkins.token: "1153554321d29c021e79200b931a71272e"
+    jenkins.user: "project"
+    jenkins.password: "project"
   tasks:
   - name: jenkins
     uri:
