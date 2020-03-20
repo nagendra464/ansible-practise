@@ -5,7 +5,7 @@
     owner: nobody
     group: nogroup
     state: touch
-    mode: '0644'
+    
 
 
 
@@ -15,4 +15,4 @@
     owner: root
     group: root
     state: touch 
-    mode: '0644'  
+    
