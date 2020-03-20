@@ -6,3 +6,13 @@
     opts: bind
     fstype: none
     state: mounted
+    
+
+- name: Mount the directories
+  mount:
+    path: /nfs/general
+    src: 172.31.39.209:/var/nfs/general
+    opts: bind
+    fstype: none
+    state: mounted
+        
