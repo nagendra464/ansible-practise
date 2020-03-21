@@ -1,8 +1,0 @@
----
-- name: file
-  file:
-    path: /var/nfs/general
-    state: directory
-    owner: nobody
-    group: nogroup
-

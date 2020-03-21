@@ -1,7 +1,0 @@
----
-- name: NFS configuration file to set up the sharing of these resources.
-  template:
-    src: exports.j2
-    dest: /etc/exports
- 
-    

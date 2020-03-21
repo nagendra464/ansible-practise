@@ -1,7 +1,0 @@
----
-- name: permanent mounting
-  template:
-    src: fstab.j2
-    dest: /etc/fstab
-
-    

@@ -1,7 +1,0 @@
----
-# tasks file for nfs-role
-- include_tasks: nfs-host.yml
-- include_tasks: ufw.yml
-- include_tasks: file-create.yml
-- include_tasks: configuration.yml
-- include_tasks: service.yml
